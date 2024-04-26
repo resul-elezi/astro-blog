@@ -1,11 +1,7 @@
 ---
 import MainHead from './MainHead.astro';
 
-interface Props {
-    title?: string;
-    description?: string;
-}
-const { title = "Default Title", description = "Default Description"} = Astro.props as Props;
+const { title = "Default Title", description = "Default Description"} = Astro.props;
 ---
 
 <html lang="en">
