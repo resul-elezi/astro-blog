@@ -2,6 +2,9 @@
   "name": "astro-blog",
   "type": "module",
   "version": "0.0.1",
+  "browserlist": [
+    "defaults"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
