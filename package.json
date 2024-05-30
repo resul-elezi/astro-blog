@@ -2,7 +2,8 @@
   "name": "astro-blog",
   "type": "module",
   "version": "0.0.1",
-  "browserlist": [
+  "private": true,
+  "browserslist": [
     "defaults"
   ],
   "scripts": {
