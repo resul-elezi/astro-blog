@@ -1,18 +1,14 @@
 {
-  "name": "astro-blog",
+  "name": "",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
-    "astro": "^4.16.7",
-    "astro-icon": "^1.1.0",
-    "typescript": "^5.5.2"
+    "astro": "^5.7.4"
   }
 }
