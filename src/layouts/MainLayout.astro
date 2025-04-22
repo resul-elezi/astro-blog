@@ -1,12 +1,5 @@
 ---
-interface Props {
-    title?: string;
-    description?: string;
-}
-const {
-    title = "Mein Astro Blog",
-    description = "My musings about the Astro framework",
-} = Astro.props as Props;
+const { title, description } = Astro.props;
 ---
 
 <html lang="de">
