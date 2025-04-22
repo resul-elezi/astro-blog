@@ -2,7 +2,10 @@
 // component import
 import MainHead from "./MainHead.astro";
 
-const { title = "Mein Astro Blog", description } = Astro.props;
+const {
+    title = "Mein Astro Blog",
+    description = "Meine Gedanken über das Astro-Framework",
+} = Astro.props;
 ---
 
 <html lang="de">
