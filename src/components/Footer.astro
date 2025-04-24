@@ -1,18 +1,9 @@
 ---
-
+const year = new Date().getFullYear();
 ---
 
 <footer>
-    <small>
-        Copyright &copy; <span id="copyright">
-        </span>
-        | All rights reserved
-    </small>
+  <small>
+    Copyright &copy; {year} | All rights reserved
+  </small>
 </footer>
-
-<script>
-    document.getElementById("copyright").textContent = 
-    new Date()
-    .getFullYear()
-    .toString();
-</script>
