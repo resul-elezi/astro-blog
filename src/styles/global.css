@@ -287,6 +287,7 @@ button {
   & svg {
     height: var(--fs-md);
     width: var(--fs-md);
+    
   }
 
   &.primary {
@@ -357,6 +358,7 @@ button {
   display: grid;
   place-items: center;
   padding: var(--space-2xs);
+
 }
 
 [aria-label="Blog pages"] {
