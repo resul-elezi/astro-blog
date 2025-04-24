@@ -11,7 +11,8 @@ import navData from "../data/navData";
         <Icon name="logomark"/>
       </a>
       <ul>
-        {navData.map((item) =>(
+        {
+        navData.map((item) =>(
             <a href={item.path}>{item.name}</a>
         ))}
       </ul>
