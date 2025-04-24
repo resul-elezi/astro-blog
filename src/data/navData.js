@@ -8,3 +8,5 @@ const navData = [
         path: "/blog/"
     },
 ]
+
+export default navData;
