@@ -360,6 +360,10 @@ button {
   padding: var(--space-2xs);
 
 }
+.logomark svg {
+  width: 1.5rem;
+  height: auto;
+}
 
 [aria-label="Blog pages"] {
   display: flex;
