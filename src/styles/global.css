@@ -333,7 +333,7 @@ button {
 
 [aria-label="Primary"] {
   width: 100%;
-  padding-block: var(--space-xs);
+  padding-block: var(--space-2xs);
   background-color: hsl(var(--muted));
   box-shadow: var(--shadow-sm);
 
