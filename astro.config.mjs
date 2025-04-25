@@ -5,5 +5,11 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [icon()]
+  integrations: [
+    icon({
+      include: {
+        tabler: ['*'],  // Alle Icons aus Tabler einbinden
+      }
+    })
+  ]
 });
