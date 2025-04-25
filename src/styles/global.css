@@ -244,7 +244,7 @@ button {
 
   &:hover {
     /* color: hsl(var(--accent)); */
-    color: #38BDF8;
+    
   }
 
   &:focus {
