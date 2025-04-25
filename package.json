@@ -17,6 +17,7 @@
     "astro": "^5.7.4",
     "astro-icon": "^1.1.5",
     "postcss": "^8.5.3",
-    "postcss-preset-env": "^10.1.6"
+    "postcss-preset-env": "^10.1.6",
+    "sharp": "^0.34.1"
   }
 }
