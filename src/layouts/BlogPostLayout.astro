@@ -6,7 +6,7 @@ const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
 ---
 
-<MainLayout title={title}>
+<MainLayout {title} {description}>
 	<header>
         <div class="container">
 
