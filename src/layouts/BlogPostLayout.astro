@@ -1,6 +1,8 @@
 ---
 // component import
-import MainLayout from "./MainLayout.astro"
+import MainLayout from "./MainLayout.astro";
+
+const {frontmatter} = Astro.props;
 ---
 
 <MainLayout title="Mein Blog">
@@ -15,7 +17,7 @@ import MainLayout from "./MainLayout.astro"
             <slot />
         </div>
         <div class="sidebar">
-            
+
         </div>
     </div>
 </MainLayout>
