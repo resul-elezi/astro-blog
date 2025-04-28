@@ -9,7 +9,7 @@ const { category, title, author, date, image } = Astro.props;
 
 ---
 
-<article>
+<article class="card">
     <div class="container">
         <small>
             <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
