@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import { slugify, formatDate} from "../js/utils";
 
 const { frontmatter, url } = Astro.props;
-const { category, title, author, date, image, description } = post.frontmatter;
+const { category, title, author, date, image, description } = frontmatter;
 ---
 
 <pre>{JSON.stringify(post.frontmatter, null, 2)}</pre>
