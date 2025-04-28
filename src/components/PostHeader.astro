@@ -17,14 +17,4 @@ const { category, title, author, date, image } = Astro.props;
         <h1 class="h2">{title}</h1>
         <p>by <a href={`/author/${slugify(author)}/`}>{author}</a> • {formatDate(date)}</p>
     
-    <Image 
-        src={image.src} 
-        alt={image.alt} 
-        width="1200"
-        height="600"
-        format="webp"
-        fit="cover"
-        quality={85}
-        class="hero-image"
-    />
 </article>
