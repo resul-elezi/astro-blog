@@ -8,3 +8,23 @@ const { post } = Astro.props;
 ---
 
 <pre>{JSON.stringify(post.frontmatter, null, 2)}</pre>
+
+<header>
+    <div class="container">
+        <small>
+            <a href={`/category/${slugify(category)}/`} class="badge">{category}</a>
+        </small>
+        <h1 class="h2">{title}</h1>
+        <p>by <a href={`/author/${slugify(author)}/`}>{author}</a> • {formatDate(date)}</p>
+    </div>
+    <Image 
+        src={image.src} 
+        alt={image.alt} 
+        width="1200"
+        height="600"
+        format="webp"
+        fit="cover"
+        quality={85}
+        class="hero-image"
+    />
+</header>
