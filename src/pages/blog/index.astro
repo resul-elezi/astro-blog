@@ -7,5 +7,7 @@ const allPosts = await Astro.glob("./*.md");
 ---
 
 <MainLayout title="Mein Blog">
-	Blog
+	{
+		allPosts.map((post) => <PostCard {post} />)
+	}
 </MainLayout>
