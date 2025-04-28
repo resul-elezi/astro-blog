@@ -7,4 +7,4 @@ import { slugify, formatDate} from "../js/utils";
 const { post } = Astro.props;
 ---
 
-<p>{post.frontmatter.title}</p>
+<pre>{JSON.stringify(post.frontmatter, null, 2)}</pre>
