@@ -8,7 +8,7 @@ const allPosts = await Astro.glob("./*.md");
 ---
 
 <MainLayout title="Mein Blog">
-	
+	{allPosts.map((post) => <PostCard frontmatter={post.frontmatter} url={post.url} tagType="h2" />)}
 	<!-- <PostCard 
 	frontmatter={allPosts[0].frontmatter} 
 	url={allPosts[0].url} 
