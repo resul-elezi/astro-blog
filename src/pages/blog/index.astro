@@ -3,6 +3,7 @@
 import MainLayout from "../../layouts/MainLayout.astro";
 
 const allPosts = await Astro.glob("./*.md");
+console.log(" ~ allPosts", allPosts);
 ---
 
 <MainLayout title="Mein Blog">
