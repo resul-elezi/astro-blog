@@ -43,5 +43,5 @@ export function slugify(text) {
     if(typeof limit === "number") {
       return filteredPosts.slice(0, limit);
     }
-    
+    return filteredPosts;
   }
