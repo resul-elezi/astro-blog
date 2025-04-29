@@ -21,5 +21,5 @@ export function slugify(text) {
     sortByDate = true,
     limit = undefined,
   } = {}){
-    console.log(posts);
+    const filteredPosts = posts.reduce();
   }
