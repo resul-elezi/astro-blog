@@ -15,7 +15,7 @@ const formattedPosts = formatBlogPosts(allPosts);
 		<h1 class="h1">New Blog Posts</h1>
 		<div class="post-container">
 		  {
-			allPosts.map((post) => (
+			formattedPosts.map((post) => (
 			  <PostCard
 				frontmatter={post.frontmatter}
 				url={post.url}
