@@ -23,5 +23,7 @@ export function slugify(text) {
   } = {}) {
     const filteredPosts = posts.reduce((acc, post) => {
       const { date, draft } = post.frontmatter;
+      // filterOutDrafts if true
+      if(filterOutDrafts && draft) return acc;
     }, []);
   }
