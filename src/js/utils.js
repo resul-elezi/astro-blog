@@ -32,5 +32,9 @@ export function slugify(text) {
       // add post to acc
       acc.push(post);
       return acc;
-    }, []);
+    }, [])
+    // sortByDate or randomize
+    if(sortByDate) {
+      filteredPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+    }
   }
