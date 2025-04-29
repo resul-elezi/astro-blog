@@ -15,11 +15,21 @@ export function slugify(text) {
     })
   }
 
-  export function formatBlogPosts(posts, {
-    filterOutDrafts = true,
-    filterOutFuturePosts = true,
-    sortByDate = true,
-    limit = undefined,
+  /**
+ * @param {Array} posts
+ * @param {{
+ *   filterOutDrafts?: boolean,
+  *   filterOutFuturePosts?: boolean,
+  *   sortByDate?: boolean,
+  *   limit?: number
+  * }} [options]
+  * @returns {Array}
+  */
+ export function formatBlogPosts(posts, {
+   filterOutDrafts = true,
+   filterOutFuturePosts = true,
+   sortByDate = true,
+   limit = undefined,
   } = {}) {
     const filteredPosts = posts.reduce((acc, post) => {
       const { date, draft } = post.frontmatter;
