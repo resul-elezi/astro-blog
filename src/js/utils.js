@@ -20,6 +20,6 @@ export function slugify(text) {
     filterOutFuturePosts = true,
     sortByDate = true,
     limit = undefined,
-  } = {}){
+  } = {}) {
     const filteredPosts = posts.reduce();
   }
