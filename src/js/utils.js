@@ -28,5 +28,9 @@ export function slugify(text) {
 
       // filterOutFuturePosts if true
       if(filterOutFuturePosts && new Date(date) > new Date()) return acc;
+
+      // add post to acc
+      acc.push(post);
+      return acc;
     }, []);
   }
