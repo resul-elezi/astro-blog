@@ -14,3 +14,12 @@ export function slugify(text) {
       timeZone: "UTC",
     })
   }
+
+  export function formatBlogPosts(posts, {
+    filterOutDrafts = true,
+    filterOutFuturePosts = true,
+    sortByDate = true,
+    limit = undefined,
+  } = {}){
+    
+  }
