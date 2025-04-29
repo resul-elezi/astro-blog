@@ -7,7 +7,9 @@ import PostCard from "../components/PostCard.astro";
 import { formatBlogPosts } from "../js/utils";
 
 const allPosts = await Astro.glob("./blog/*.md");
-const formattedPosts = formatBlogPosts(allPosts);
+const formattedPosts = formatBlogPosts(allPosts, {
+	limit: 3,
+});
 ---
 
 <MainLayout title="Startseite">
