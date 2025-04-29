@@ -25,5 +25,8 @@ export function slugify(text) {
       const { date, draft } = post.frontmatter;
       // filterOutDrafts if true
       if(filterOutDrafts && draft) return acc;
+
+      // filterOutFuturePosts if true
+      if(filterOutFuturePosts && new Date(date) > new Date()) return acc;
     }, []);
   }
