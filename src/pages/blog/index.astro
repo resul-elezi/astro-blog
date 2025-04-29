@@ -9,6 +9,9 @@ import { formatBlogPosts } from "../../js/utils";
 const allPosts = await Astro.glob("./*.md");
 const formattedPosts = formatBlogPosts(allPosts, {
 	filterOutDrafts: false,
+	filterOutFuturePosts: false,
+	sortByDate: false,
+	limit: 2,
 });
 ---
 
