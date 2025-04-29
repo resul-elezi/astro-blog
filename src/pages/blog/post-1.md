@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/BlogPostLayout.astro"
 title: A Post about Important Items Of Life
-date: 2025-04-30
-author: Resul Elezi
+date: 2022-11-20
+author: Darnell McClure
 image: {
   src: "/images/post-1.jpg",
   alt: "A picture of a coder",
