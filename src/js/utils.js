@@ -36,5 +36,7 @@ export function slugify(text) {
     // sortByDate or randomize
     if(sortByDate) {
       filteredPosts.sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date))
+    } else {
+      filteredPosts.sort(() => Math.random() - 0.5)
     }
   }
