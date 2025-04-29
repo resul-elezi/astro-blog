@@ -39,4 +39,9 @@ export function slugify(text) {
     } else {
       filteredPosts.sort(() => Math.random() - 0.5)
     }
+    // limit if number is passed
+    if(typeof limit === "number") {
+      return filteredPosts.slice(0, limit);
+    }
+    
   }
