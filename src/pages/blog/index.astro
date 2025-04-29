@@ -7,12 +7,7 @@ import PostCard from "../../components/PostCard.astro";
 import { formatBlogPosts } from "../../js/utils";
 
 const allPosts = await Astro.glob("./*.md");
-const formattedPosts = formatBlogPosts(allPosts, {
-	filterOutDrafts: false,
-	filterOutFuturePosts: false,
-	sortByDate: false,
-	limit: 2,
-});
+const formattedPosts = formatBlogPosts(allPosts);
 ---
 
 <MainLayout title="Mein Blog">
