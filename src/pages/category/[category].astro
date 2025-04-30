@@ -4,7 +4,7 @@ import { slugify } from '../../js/utils';
 export async function getStaticPaths() {
     return [
         {
-            params: {category: slugify},
+            params: {category: slugify("Reference Docs")},
             props: {},
         }
     ]
