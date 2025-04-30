@@ -17,8 +17,8 @@ export async function getStaticPaths() {
     })
 }
 
-const { category } = Astro.params;
-const { name } = Astro.props;
+const { author } = Astro.params;
+const { posts, authorName } = Astro.props;
 
 ---
 
