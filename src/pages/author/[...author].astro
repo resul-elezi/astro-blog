@@ -12,6 +12,7 @@ export async function getStaticPaths() {
     const allAuthors = [
         ...new Set(formattedPosts.map((post) => post.frontmatter.author).flat()),
     ];
+    return allAuthors.map()
 }
 
 const { category } = Astro.params;
