@@ -32,8 +32,8 @@ const { name } = Astro.props;
 ---
 
 
-<MainLayout title="Mein Blog">
-	<section class="container" aria-label="New Blog Posts">
+<MainLayout title={name}>
+	<section class="container" aria-label={`Posts about ${name}`}>
 		<h1 class="h1">Posts about {name}</h1>
 		<div class="post-container">
 			{
