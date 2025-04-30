@@ -37,11 +37,11 @@ const { posts, authorName } = Astro.props;
 		<h1 class="h1">Posts by <span>{authorName}</span></h1>
 		<div class="post-container">
 			{
-			  posts.map((post) => (
-				<PostCard
-				  frontmatter={post.frontmatter}
-				  url={post.url}
-				  tagType="h2"
+			   posts.map((post) => (
+                <PostCard
+                    frontmatter={post.frontmatter}
+                    url={post.url}
+                    tagType="h2"
 				/>
 			  ))
 			}
