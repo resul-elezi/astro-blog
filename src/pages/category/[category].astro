@@ -26,11 +26,14 @@ export async function getStaticPaths() {
         }
     ]
 }
-const allPosts = await Astro.glob("./blog/*.md");
-const formattedPosts = formatBlogPosts(allPosts);
 
 const { category } = Astro.params;
 const { name } = Astro.props;
+const allPosts = await Astro.glob("../blog/*.md");
+const formattedPosts = formatBlogPosts(allPosts);
+const catPosts = formattedPosts.filter(
+  (post) => slugify(post.frontmatter.category) === category
+);
 
 ---
 
