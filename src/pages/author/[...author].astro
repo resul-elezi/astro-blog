@@ -25,10 +25,10 @@ const { posts, authorName } = Astro.props;
 
 <MainLayout title={name}>
 	<section class="container" aria-label={`Posts about ${name}`}>
-		<h1 class="h1">Posts about <span>{name}</span></h1>
+		<h1 class="h1">Posts by <span>{name}</span></h1>
 		<div class="post-container">
 			{
-			  catPosts.map((post) => (
+			  posts.map((post) => (
 				<PostCard
 				  frontmatter={post.frontmatter}
 				  url={post.url}
