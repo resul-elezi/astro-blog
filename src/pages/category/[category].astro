@@ -1,8 +1,10 @@
 ---
+import { slugify } from '../../js/utils';
+
 export async function getStaticPaths() {
     return [
         {
-            params: {},
+            params: {category: slugify},
             props: {},
         }
     ]
