@@ -34,7 +34,7 @@ const { name } = Astro.props;
 
 <MainLayout title="Mein Blog">
 	<section class="container" aria-label="New Blog Posts">
-		<h1 class="h1">New Blog Posts</h1>
+		<h1 class="h1">Posts about {name}</h1>
 		<div class="post-container">
 			{
 			  formattedPosts.map((post) => (
