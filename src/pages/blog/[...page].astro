@@ -6,6 +6,7 @@ import PostCard from "../../components/PostCard.astro";
 
 // utils imports
 import { formatBlogPosts } from "../../js/utils";
+import Pagination from "../../components/Pagination.astro";
 
 export async function getStaticPaths({ paginate }) {
 	const allPosts = await Astro.glob("./*.md");
@@ -31,6 +32,7 @@ const { page } = Astro.props;
 			  ))
 			}
 		</div>
+		<Pagination />
 	  </section>
 	<!-- <PostCard 
 	frontmatter={allPosts[0].frontmatter} 
