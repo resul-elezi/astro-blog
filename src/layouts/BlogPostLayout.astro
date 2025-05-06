@@ -8,25 +8,16 @@ const { frontmatter } = Astro.props;
 const { title, description, date, category, author, image } = frontmatter;
 ---
 <MainLayout {title} {description}>
-	<PostHeader 
-        {title}
-        {description}
-        {date}
-        {category}
-        {image}
-        {author}
-    />
+    <PostHeader {title} {description} {date} {category} {image} {author} />
     <div class="post-content">
-        <div class="content">
-            <slot />
-        </div>
-        <div class="sidebar">
-            <aside class="container" aria-label="Blog categories">
-                <h2 class="h3">
-                    Blog Categories
-                </h2>
-                <CategoryCloud />
-              </aside>
-        </div>
+      <div class="content">
+        <slot />
+      </div>
+      <div class="sidebar">
+        <aside class="container" aria-label="Blog categories">
+          <h2 class="h3">Blog Categories</h2>
+          <CategoryCloud/>
+        </aside>
+      </div>
     </div>
-</MainLayout>
+  </MainLayout>
