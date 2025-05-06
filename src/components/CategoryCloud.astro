@@ -20,10 +20,10 @@ const { showCount } = Astro.props;
 
 <ul class="categories">
     {
-        Object.entries(processedCats).map(([key, val]) => (
-            <li>
-                <a href={`/category/${slugify(key)}/`} class="badge">{key} {showCount && `(${val})`}</a>
-            </li>
-        ))
+      Object.entries(processedCats).map(([key, val]) => (
+        <li>
+          <a class="badge" href={`/category/${slugify(key)}/`}>{key} {showCount && `(${val})`}</a>
+        </li>
+      ))
     }
-</ul>
+  </ul>
