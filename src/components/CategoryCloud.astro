@@ -1,6 +1,6 @@
 ---
 import { formatBlogPosts } from "../js/utils";
 
-const allPosts = await Astro.glob("./*.md");
+const allPosts = await Astro.glob("../pages/blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts);
 ---
