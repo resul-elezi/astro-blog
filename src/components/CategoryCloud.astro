@@ -12,5 +12,7 @@ const processedCats = allCategories.reduce((acc, category) => {
         ...acc,
         [category]: value + 1
     }
-}, {})
+}, {});
+
+const { showCount } = Astro.props;
 ---
