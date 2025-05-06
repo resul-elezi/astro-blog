@@ -1,5 +1,5 @@
 ---
-import { formatBlogPosts } from "../js/utils";
+import { formatBlogPosts, slugify } from "../js/utils";
 
 const allPosts = await Astro.glob("../pages/blog/*.md");
 const formattedPosts = formatBlogPosts(allPosts);
@@ -16,3 +16,13 @@ const processedCats = allCategories.reduce((acc, category) => {
 
 const { showCount } = Astro.props;
 ---
+
+<ul class="categories">
+    {
+        Object.entries(processedCats).map(([key, val])) => (
+            <li>
+                <a href={`/category/${slugify(key)}/`} class="badge">{key}</a>
+            </li>
+        )
+    }
+</ul>
