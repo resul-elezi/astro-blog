@@ -1,3 +1,4 @@
+/* WARNING: This CSS is optimized for the tutorial, minimizing the classes you’ll need in the comnponents. In other words, it’s not really great CSS so that the tutorial can hopefully be great—but you’ll need to follow the markup exactly for things to work properly. It would need significant re-write to use in your own custom site. */
 
 /* CSS RESET */
 *,
@@ -244,7 +245,6 @@ button {
 
   &:hover {
     color: hsl(var(--accent));
-    
   }
 
   &:focus {
@@ -288,7 +288,6 @@ button {
   & svg {
     height: var(--fs-md);
     width: var(--fs-md);
-    
   }
 
   &.primary {
@@ -335,7 +334,7 @@ button {
 
 [aria-label="Primary"] {
   width: 100%;
-  padding-block: var(--space-2xs);
+  padding-block: var(--space-xs);
   background-color: hsl(var(--muted));
   box-shadow: var(--shadow-sm);
 
@@ -359,11 +358,6 @@ button {
   display: grid;
   place-items: center;
   padding: var(--space-2xs);
-
-}
-.logomark svg {
-  width: 2rem;
-  height: auto;
 }
 
 [aria-label="Blog pages"] {
